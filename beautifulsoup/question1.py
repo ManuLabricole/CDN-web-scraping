@@ -112,6 +112,7 @@ def get_new_url(base_url, href):
 def get_df(tableau):
     try:
         df = pd.read_html(str(tableau))[0]
+        print(pd.read_html(str(tableau)))
         print_sep()
         print("Dataframe created")
         print(df)
